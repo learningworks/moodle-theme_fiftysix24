@@ -1,0 +1,124 @@
+/*
+*	USER STYLES
+*/
+
+.userinfobox {
+	margin-bottom:5px;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: separate;  
+}
+
+.userinfobox .left {
+	padding: 10px;
+	width: 100px;
+	vertical-align: top;
+}
+
+.userinfobox .content {
+	padding: 10px;
+	vertical-align: top;
+}
+
+.userinfobox .links {
+	width: 100px;
+	padding: 5px;
+	vertical-align: bottom;
+}
+
+.userinfobox .list td {
+	padding: 3px;
+}
+
+.userinfobox .username {
+	padding-bottom: 20px;
+	font-weight: bold;
+}  
+
+table.userinfobox {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+table.groupinfobox {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-width:1px;
+	border-style:solid;
+	margin-bottom: 20px;
+}
+
+.groupinfobox .left {
+	padding: 10px;
+	width: 100px;
+	vertical-align: top;
+}
+
+body#user-index h2 {
+	text-align: center;
+}
+
+body#user-index #longtimenosee,
+body#user-index #showall {
+	text-align: center;
+}
+
+body#user-index #showall {
+	margin: 10px 0px;
+}
+
+body#user-index table#participants {
+	margin: auto;
+	width: 80%;
+}
+
+body#user-index table#participants td,
+body#user-index table#participants th {
+	vertical-align: middle;
+	text-align: left;
+	padding: 4px;
+}
+
+body#user-index table.controls {
+	width: 100%;
+}
+body#user-index table.controls tr {
+	vertical-align: top;
+}
+body#user-index table.controls td.right,
+body#user-index table.controls td.left {
+	padding: 4px;
+}
+body#user-index table.controls .right {
+	text-align: right;
+}
+body#course-participation h2 {
+	text-align:center;
+}
+body#course-participation #showall {
+	text-align:center;
+	margin: 10px 0px;
+}
+body#user-index .rolesform {
+	text-align:center;
+}
+
+.userinfobox .links {
+	font-size: 0.7em;
+}
+
+body#user-index #longtimenosee {
+	font-size: 0.8em;
+}
+
+.userpicture {
+}
+
+.userinfobox {
+	border-color: #DDDDDD;
+}
+.groupinfobox {
+	border-color: #DDDDDD;
+}

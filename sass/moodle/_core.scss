@@ -1,0 +1,494 @@
+/*
+*	CORE STYLES
+*/
+
+a {
+	&:link,
+	&:visited {
+		color: map-get($color, anchor);
+	}
+
+	&.dimmed:link,
+	&.dimmed:visited {
+		color: map-get($color, anchor--dimmed);
+	}
+
+	&:hover {
+		color: map-get($color, anchor--hover);
+	}
+
+	&.autolink:link,
+	&.autolink:visited {
+		color: map-get($color, anchor);
+		background: #DDDDDD;
+	}
+
+	&.autolink.glossary:hover {
+ 		cursor: help;
+	}
+}
+
+body {
+	background-color: map-get($color, background);
+}
+
+h1.main,
+h2.main,
+h3.main,
+h4.main,
+h5.main,
+h6.main {
+	text-align: center;
+
+	font-weight:bold;
+}
+
+h1 {
+	font-size:1.7em;
+}
+
+h2 {
+	font-size:1.4em;
+}
+h3 {
+	font-size:1.1em;
+}
+h4 {
+	font-size:1.0em;
+}
+
+body, table, td, th, li {
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size:100%;
+	letter-spacing:0.02em;
+}
+
+th {
+	font-weight: bold;
+}
+
+a:link,
+a:visited {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#layout-table {
+	width:100%;
+	border-collapse:separate;
+	margin-top: 8px;
+}
+
+#layout-table #left-column,
+#layout-table #middle-column,
+#layout-table #right-column {
+	vertical-align:top;
+}
+
+#layout-table #middle-column {
+	padding-left:12px;
+	padding-right:12px;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.warning {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.clearer {
+	clear:both;
+	margin:0px;
+	padding:0px;
+	height:1px;
+	border:none;
+	background:transparent;
+	display:block;
+
+	font-size:1px;
+}
+
+.clearfix {
+	/* display: inline-bl¶ock */
+	min-width: 0;
+
+	&:after {
+		/* content: "";  */
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%; }
+.clearfix {display: block; }
+/* End hide from IE-mac */
+
+.mdl-align {
+	text-align: center;
+}
+
+.continuebutton {
+	text-align: center;
+}
+
+form {
+	margin-bottom:0px;
+}
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+a img {
+	border:none;
+}
+
+img.userpicture,
+img.grouppicture,
+.block_online_users .listentry img {
+	border: 0px solid
+}
+
+.notify {
+	&problem {
+		text-align: center;
+		padding: 10px;
+		color: map-get($color, text--error);
+	}
+ 
+	&success {
+		text-align:center;
+		padding: 10px;
+		color: map-get($color, text--success);
+	}   
+
+	&tiny {
+		text-align:left;
+		padding: 0px;
+		font-size: 0.5em;
+		color: map-get($color, text--warning);
+	}
+}
+
+.required {
+	background-color: map-get($color, background--alt);
+}
+
+.generalbox {
+	border-width:1px;
+	border-style:solid;
+	margin-bottom: 15px;
+	border-color: map-get($color, border); 
+
+	&#intro {
+
+	}
+}
+
+.noticebox {
+	border-width:1px;
+	border-style:solid;
+	border-color: map-get($color, border); 
+}
+
+.errorbox {
+	border-width:1px;
+	border-style:solid;
+	margin: 1em 15%;
+	width: 70%;
+	color: map-get($color, text--error);
+	border-color: map-get($color, border);
+	background-color: map-get($color, background--alt);
+
+	& .title {
+		padding: 5px;
+		font-weight: bold;
+		font-size: 1.2em;
+		text-align: center;
+	}
+}
+
+.errorboxcontent {
+	text-align: center;
+	background-color: map-get($color, background--alt);
+}
+
+.errorcode {
+	font-size: 0.7em;
+}
+
+.informationbox {
+	border-width:1px;
+	border-style:solid;
+	border-color: map-get($color, border); 	
+}
+
+.feedbackbox {
+	border-width:1px;
+	border-style:solid;
+	border-color: map-get($color, border); 
+}
+
+.feedbackby {
+	background-color: map-get($color, background--alt);
+}
+
+.feedback {
+
+}
+
+.generaltable {
+	border-width: 1px;
+	border-style: solid;
+
+	.cell {
+		border-width: 1px;
+		border-style: solid;
+		border-collapse: collapse;
+	}
+}
+
+.initialbar {
+	text-align: center;
+}
+
+#help .indent {
+	margin-left:3em;
+}
+
+.tabledivider {
+	border-width:1px;
+	border-style:solid;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+
+	border-color: map-get($color, border);
+}
+
+.sitetopic {
+	margin-bottom:20px;
+}
+
+.sitetopiccontent {
+	border-width:1px;
+	border-style:solid;
+	border-color: map-get($color, border);
+	background-color: map-get($color, background);
+}
+
+.pagingbar {
+	text-align:center;
+
+	a {
+		padding-left: 10px;
+	}
+
+	.title {
+		font-weight: bold;
+	}
+
+	.thispage {
+		padding-left: 10px;
+		font-weight: bold;
+	}
+}
+
+.dimmed_text {
+	color: map-get($color, text--dimmed);
+}
+
+.teacheronly {
+	color: map-get($color, text--teacheronly);
+}
+
+.unread {
+	background: #FFD991;
+} 
+
+.censoredtext {
+	color: map-get($color, text--censored);
+	background: map-get($color, background--censored);
+}
+
+table.formtable {
+	margin: auto;
+
+	tbody {
+
+		th {
+			vertical-align: top;
+			padding: 5px;
+			background: none;
+		}
+
+		td {
+			padding: 5px;
+		}
+
+		.htmlarea {
+			td, th {
+				padding: 0px;
+			}
+		}
+	}
+}
+
+th.header,
+td.header,
+div.header {
+	border-color: map-get($color, border);
+}
+
+.block_online_users .listentry img {
+	border: map-get($color, border);
+}
+
+.paging {
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+
+.unread {
+	padding-right:2px;
+} 
+
+.cell {
+	vertical-align: top;
+}
+
+.categorybox .category {
+	font-size: 1.2em;
+	font-weight:bold;
+}
+
+.helplink 
+	font-size:0.8em;
+
+	img {
+		vertical-align: middle;
+		margin: 0px 2px;
+		width: 17px;
+		height: 17px;
+	}
+}
+
+.highlight {
+	background-color: map-get($color, highlight);
+}
+
+.highlight2 {
+	color: map-get($color, highlight2); /* highlight missing terms in forum search */
+}
+
+/* Alternate rows even */
+.r0 {  
+	background-color: map-get($color, table__row);
+}
+
+/* Alternate rows odd */
+.r1 {  
+	background-color: map-get($color, table__row--alt);
+}
+
+.headingblock {
+	font-weight: bold;
+
+	.link {
+ 		font-size: 0.9em;
+ 	}
+}
+
+img {
+	&.emoticon {
+		vertical-align: middle;
+		width: 15px;
+		height: 15px;
+	}
+
+	&.resize {
+		width: 1em;
+		height: 1em;
+	}
+
+	&.userpicture,
+	&.grouppicture {
+		border-color: map-get($color, border);
+	}
+}
+
+form.popupform {
+	display: inline;
+}
+
+.files {
+	.file {
+ 		font-size: 0.9em;
+	}
+	
+	.folder {
+		font-size: 0.9em;
+		
+		.size {
+			font-weight: bold;
+		}
+	}
+}
+
+acronym, abbr {
+	cursor: help;
+}
+
+a.useredit, a:hover.useredit, .blink {
+	color: black;
+	text-decoration: blink;
+	cursor: help;
+}
+
+.navbar {
+	border-color: map-get($color, border);
+}
+
+/*Accessibility: text 'seen' by screen readers but not visual users. Fixed for RTL    languages, example Farsi. */
+.accesshide {
+ position:absolute;
+ top:-1000px;
+ left:10px;
+ font-weight:normal;
+ font-size:1em;
+}
+
+span.hide,
+div.hide {
+ display:none;
+}
+
+/* kept for backward compatibility with some non-standard modules
+  which use these classes for various things */
+.generaltab, .generaltabinactive {
+ background-color: map-get($color, background--alt);
+}
+.generaltabselected {
+ background-color: map-get($color, background--selected);
+}
+.generaltabinactive {
+ color: map-get($color, text--dimmed);
+}
+.generaltable .cell {
+ background-color: map-get($color, background);
+ border-color: map-get($color, border);
+}
+.generaltable {
+ border-color: map-get($color, border);
+}

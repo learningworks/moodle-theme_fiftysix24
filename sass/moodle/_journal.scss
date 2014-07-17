@@ -1,0 +1,60 @@
+/*
+*	JOURNAL STYLES
+*/
+
+#mod-journal-view .lastedit,
+#mod-journal-view .editend {
+	margin: 5px;
+	text-align: center;
+}
+
+#mod-journal-view .feedbackbox {
+	width: 75%;
+	border-collapse: separate;
+}
+
+#mod-journal-view .entrycontent {
+	padding: 3px;
+}
+
+#mod-journal-view .picture {
+	width: 35px;
+}
+
+#mod-journal-view .grade {
+	text-align: right;
+}
+
+#mod-journal-view .info {
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+#mod-journal-view .lastedit,
+#mod-journal-view .editend {
+	font-size: 0.7em;
+}
+
+#mod-journal-view .author {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#mod-journal-view .time {
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+#mod-journal-view .grade {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#mod-journal-index .cell {
+	font-size:0.8em;
+}
+
+#mod-journal-view .feedbackbox .left,
+#mod-journal-view .feedbackbox .entryheader {
+	background-color: #dddddd;
+}

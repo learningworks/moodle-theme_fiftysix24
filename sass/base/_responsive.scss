@@ -1,0 +1,397 @@
+/**
+ * Responsive block/element modules
+ * 
+ *
+ * @author LearningWorks Ltd
+ * @url https://learningworks.co.nz
+ */
+
+
+// =====================================================
+// ----------------- Global Containers -----------------
+// =====================================================
+
+
+// Mobile nav sits outside of page
+.mobile-nav-container {
+	width: 100%;
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	display: none;
+
+	background: map-get($color, background--mobile);
+
+	.mobile-nav--is-open & {
+		display: block;
+	}
+
+	.wrapper {
+		margin-left: 20%;
+		padding: 1em 2em 3em 2em;
+		overflow: hidden;
+	}
+
+	.nav__item {
+		padding: 0;
+
+		list-style: none;
+		border-bottom: 1px solid map-get($color, border--mobile-nav);
+
+		&:first-child {
+			border-top: 1px solid map-get($color, border--mobile-nav);
+		}
+	}
+
+	.nav__link {
+		color: map-get($color, anchor--mobile);
+		display: block;
+		padding: 0.5em;
+		text-decoration: none;
+
+		&:hover {
+			background: lighten(map-get($color, background--mobile), 25%);
+		}
+
+		&.active {
+			color: map-get($color, green);
+		}
+	}
+
+	.nav--child {
+		border-top: 1px solid map-get($color, border--mobile-nav);
+
+		.nav__item:first-child {
+			border-top: none;
+		} 
+
+		.nav__item:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+
+// Page wraps around all global containers
+.page {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	background: map-get($color, background);
+
+	transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+
+	.mobile-nav-handler--close {
+		display: none;
+	}
+
+	.mobile-nav--is-open & {
+		position: fixed;
+		overflow: hidden;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		transform: translate3d(-80%, 0, 0);
+		-o-transform: translate3d(-80%, 0, 0);
+		-moz-transform: translate3d(-80%, 0, 0);
+		-webkit-transform: translate3d(-80%, 0, 0);
+
+		cursor: pointer;
+		-webkit-box-shadow: rgba(25, 25, 25, 0.5) 5px 10px 10px;
+		-moz-box-shadow: rgba(25, 25, 25, 0.5) 5px 10px 10px;
+		box-shadow: rgba(25, 25, 25, 0.5) 5px 10px 10px;
+
+		.mobile-nav-handler--close {
+			z-index: 999;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+
+.global-header {
+	position: relative;
+	z-index: 1;
+	height: 100px;
+	padding: 10px 0;
+
+	background: map-get($color, background);
+
+	-webkit-box-shadow: rgba(25,25,25,0.2) 0px 1px 2px;
+	-moz-box-shadow: rgba(25,25,25,0.2) 0px 1px 2px;
+	box-shadow: rgba(25,25,25,0.2) 0px 1px 2px;
+
+	.header-logo {
+		position: absolute;
+		z-index: 0;
+		top: 3px;
+		height: 115px;
+	}
+
+	.navigation {
+		position: relative;
+		z-index: 1;
+	}
+
+	// DEFINES STYLING FOR HEADER NAVIGATION ELEMENTS
+	.nav {
+
+		// PRIMARY NAVIGATION CONTAINER
+		&--primary {
+			padding: 0;
+			margin: 0 0;
+			clear: both;
+			float: right;
+			margin-top: 25px;
+
+
+		display: none;
+
+		@include breakpoint(tablet--large) {
+			display: block;
+		}
+
+			.nav__item {
+				padding-bottom: 1em;
+				position: relative;
+
+				&:first-child .nav-link {
+					border-left: none;
+				}
+
+				&:hover {
+					.nav-container.child {
+						display: block;
+					}
+				}
+			}
+
+			.nav__link {
+				color: map-get($color, text);
+				padding-bottom: 2px;
+				padding-top: 2px;
+				border-left: 1px solid #ccc;
+				text-decoration: none;
+	
+				&:hover, &.active {
+					color: map-get($color, green);
+				}
+			}
+		}
+
+		// SECONDARY NAVIGATION CONTAINER
+		&--secondary {
+			padding: 0;
+			margin: 0 0;
+			clear: both;
+			float: right;
+
+					display: none;
+
+		@include breakpoint(tablet--large) {
+			display: block;
+		}
+
+			.nav__item {
+				.button {
+					margin-top: -0.5em;
+					font-size: font-size(small);
+				}
+			}
+
+			.nav__link {
+				padding-right: 3em;
+				position: relative;
+
+				color: map-get($color, green);
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 14px;
+
+				&.cart {
+					padding-left: 3em;
+
+					&:before {
+						content: '';
+						position: absolute;
+						width: 32px;
+						height: 32px;
+						left: 5px;
+						top: 0;
+						margin-top: -7px;
+					}
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		// CHILD NAVIGATION CONTAINER eg drop-down menu
+		&--child {
+			position: absolute;
+			display: none;
+			top: 33px;
+			min-width: 150px;
+			margin: 0;
+			left: 0;
+			padding: 0;
+			background: #fff;
+			box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.25);
+			border-bottom: 5px solid #00aeef;
+
+			.nav__item {
+				float: none;
+				border-left: none;
+				padding-bottom: 0;
+			}
+
+			.nav__link {
+				display: block;
+				padding: 0.5em 1em;
+			}
+
+		}
+
+		// NAV__ITEM STYLING
+		&__item {
+			float: left;
+			padding: 0;
+
+			list-style: none;
+
+		}
+
+		// THE NAVIGATION ANCHOR STYLING
+		&__link {
+			padding: 0 1em;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	.mobile-nav--toggle {
+		display: block;
+		position: relative;
+		float: right;
+		padding: 1em;
+		margin-top: 10px;
+		overflow: hidden;
+		cursor: pointer;
+
+		@include breakpoint(tablet--large) {
+			display: none;
+		}
+	}
+}
+
+.global-content {
+
+}
+
+.global-footer {
+
+}
+
+
+// =====================================================
+// ----------------- Content Containers ----------------
+// =====================================================
+
+
+// Container to impose Susy grid layouts
+.container {
+	//@include container($small, $medium, $large);
+	@include set-container;
+	position: relative;
+}
+
+
+// Default module stylings, should be inherited by all modules.
+.module {
+	position: relative;
+}
+
+
+.blocks--pre {
+	@include span(last 6 of 6);
+
+	@include breakpoint(tablet--small) {
+		@include span(first 4 of 8);
+	}
+
+	@include breakpoint(tablet--large) {
+		@include span(3 of 10);
+	}
+
+	@include breakpoint(desktop--small) {
+		@include span(3 of 12);
+	}
+
+	@include breakpoint(desktop--large) {
+		@include span(3 of 14);
+	}
+
+	@include breakpoint(desktop--x-large) {
+		@include span(4 of 20);
+	}
+}
+
+.blocks--post {
+	@include span(last 6 of 6);
+
+	@include breakpoint(tablet--small) {
+		@include span(last 4 of 8);
+	}
+
+	@include breakpoint(tablet--large) {
+		@include span(3 of 10);
+		clear: left;
+	}
+
+	@include breakpoint(desktop--small) {
+		@include span(last 3 of 12 nobreak);
+	}
+
+	@include breakpoint(desktop--large) {
+		@include span(last 3 of 14);
+	}
+
+	@include breakpoint(desktop--x-large) {
+		@include span(last 4 of 20);
+	}
+}
+
+.main-content {
+	@include span(6 of 6);
+
+	@include breakpoint(tablet--small) {
+		@include span(8 of 8);
+	}
+
+	@include breakpoint(tablet--large) {
+		@include span(last 7 of 10);
+	}
+
+	@include breakpoint(desktop--small) {
+		@include span(isolate 6 at 4 of 12);
+	}
+
+	@include breakpoint(desktop--large) {
+		@include span(isolate 8 at 4 of 14);
+	}
+
+	@include breakpoint(desktop--x-large) {
+		@include span(isolate 12 at 5 of 20);
+	}
+}

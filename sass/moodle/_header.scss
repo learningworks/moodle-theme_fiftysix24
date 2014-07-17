@@ -1,0 +1,113 @@
+/*
+*	HEADER STYLES
+*/
+
+.headerskip {
+	position:absolute;
+	right:20em;
+	font-size:0.8em;
+}
+
+#header-home {
+}
+
+#header {
+}
+
+.headermain {
+	font-weight:bold;
+}
+
+.headermain, h1.headermain {
+	float:left;
+	margin:0%;
+	padding:0%;
+}
+
+#header-home .headermain {
+	font-size:1.5em;
+}
+
+#header .headermain {
+	font-size:1.3em;
+}
+
+.headermenu {
+	float:right;
+	text-align:right;
+}
+
+.navbar {
+	width:auto;
+	padding:3px 0.5em;
+	border-width:1px;
+	border-style:solid;
+}
+
+table.navbar {
+	width: 100%;
+}
+
+.navbar .navbutton form {
+	float: left;
+}
+
+.navbar .navbutton {
+	margin-top: 3px;
+}
+
+.navbar .breadcrumb {
+	float:left;
+	margin:0.2em 0em;
+}
+
+.breadcrumb {
+	font-size:0.9em;
+	font-weight:bold;
+}
+
+.breadcrumb ul {
+	padding:0%;
+	margin:0%;
+	text-indent:0%;
+	list-style:none;
+}
+
+.breadcrumb li {
+	display:inline;
+}
+
+.navbar .navbutton,
+.navbar .menu {
+	float:right;
+}
+
+#footer .navbar {
+	margin-top: 4em;
+}
+
+.reportlink {
+	text-align:right;
+}
+
+.logininfo,
+#header-home .headermenu font {
+	font-size:0.8em;
+}
+
+/* Accessibility: only certain fonts support Unicode chars like ► in IE6 */
+
+.breadcrumb .sep, .headermenu button,
+.calendar-controls .previous, .calendar-controls .next {
+	font-family:Arial, Helvetica, Courier, sans-serif;
+}
+
+.breadcrumb .sep {
+	color: map-get($color, border);
+}
+
+.headerskip a:link,
+.headerskip a:visited,
+.headerskip a:hover {
+	color: map-get($color, anchor);
+}

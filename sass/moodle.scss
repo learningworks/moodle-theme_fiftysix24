@@ -1,0 +1,51 @@
+/**
+ * Imports SASS partials and compiles to CSS
+ *
+ * @author LearningWorks Ltd
+ * @url https://learningworks.co.nz
+ */
+
+// toggle debug
+$debug-allow: true;
+
+// Imports susy
+@import "susy";
+
+// Imports base site styles
+@import "base/reset",
+		"base/mixins",
+		"base/fonts",
+		"base/variables",
+		"base/tags",
+		"base/responsive";
+
+// Import all moodle modules
+@import "moodle/admin",
+		"moodle/assignment",
+		"moodle/blocks",
+		"moodle/blogs",
+		"moodle/calendar",
+		"moodle/chat",
+		"moodle/choice",
+		"moodle/core",
+		"moodle/doc",
+		"moodle/footer",
+		"moodle/forum",
+		"moodle/glossary",
+		"moodle/grades",
+		"moodle/header",
+		"moodle/journal",
+		"moodle/lesson",
+		"moodle/login",
+		"moodle/logs",
+		"moodle/message",
+		"moodle/mymoodle",
+		"moodle/question",
+		"moodle/quiz",
+		"moodle/resource",
+		"moodle/scorm",
+		"moodle/survey",
+		"moodle/tabs",
+		"moodle/user",
+		"moodle/wiki",
+		"moodle/workshop";

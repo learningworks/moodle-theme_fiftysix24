@@ -1,0 +1,41 @@
+/*
+*	CHAT STYLES
+*/
+
+#mod-chat-gui_header_js-jsupdate {
+	margin:10px
+}
+
+#mod-chat-gui_header_js-jsupdate .chat-event,
+#mod-chat-gui_header_js-jsupdate .chat-message {
+	width:100%;
+	padding:0;
+	margin-top:7px
+}
+.chat-event .picture,
+.chat-message .picture {
+	width:40px;
+	vertical-align:top;
+}
+
+.chat-event .text,
+.chat-message .text {
+	text-align: left;
+}
+
+#mod-chat-index .cell {
+	font-size:0.8em;
+}
+
+#mod-chat-gui_header_js-jsupdate .text {
+	color:#000
+}
+
+#mod-chat-gui_header_js-jsupdate .event,
+#mod-chat-gui_header_js-jsupdate .title {
+	color:#888
+}
+
+#mod-chat-gui_header_js-chatinput .wait {
+   background: #dddddd;
+}

@@ -1,0 +1,25 @@
+/*
+*	LOGIN STYLES
+*/
+
+.loginbox {
+	margin-top:15px;
+}
+
+.loginbox .content {
+	border-width:1px;
+	border-style:solid;
+	padding:15px;
+	font-size: 0.85em;
+	border-color: map-get($color, border);
+}
+
+.loginform .c1, 
+.logintable .c1 {
+	text-align: left;
+}
+
+.loginform .c1 input,
+.logintable .c1 input {
+	width: 6em;
+}

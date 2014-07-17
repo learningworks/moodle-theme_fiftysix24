@@ -1,0 +1,268 @@
+/*
+*	ADMIN STYLES
+*/
+
+body#admin-index .c0 {
+	vertical-align: top;
+	background-color: map-get($color, background);
+} 
+
+body#admin-index .c1 {
+	vertical-align: middle;
+} 
+
+body#admin-modules table.generaltable td.cell,
+body#admin-modules .generaltablecell {
+	padding-top: 2px;
+	padding-bottom: 2px;
+} 
+
+body#admin-blocks table#blocks,
+body#admin-blocks table#incompatible {
+	width: 70%;
+	margin: auto;
+}
+
+body#admin-blocks table#blocks th,
+body#admin-blocks table#incompatible th,
+body#admin-blocks table#blocks td.cell,
+body#admin-blocks table#incompatible td.cell {
+	padding: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+body#admin-blocks table#blocks .r0,
+body#admin-blocks table#incompatible .r0 {
+	background-color: map-get($color, table__row);
+}
+
+body#admin-blocks table#blocks .r1,
+body#admin-blocks table#incompatible .r1 {
+	background-color: map-get($color, table__row--alt);
+}
+
+body#admin-blocks table#blocks td.c0,
+body#admin-blocks table#blocks th.c0,
+body#admin-blocks table#incompatible td.c0,
+body#admin-blocks table#incompatible th.c0 {
+	text-align: left;
+}
+
+body#admin-blocks table#incompatible td.c0 {
+	font-weight: bold;
+	color: map-get($color, text--dimmed);
+}
+
+body#admin-blocks 
+body#admin-config .confighelp {
+	display: block;
+	padding-bottom: 20px;
+}
+
+body#admin-roles-manage table.generalbox {
+	margin: auto;
+}
+
+body#admin-index .explanation {
+	font-size: 0.7em;
+	vertical-align: bottom;
+}
+
+body#admin-index .copyright {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#admin-report-simpletest-index .exception pre {
+	padding: 8px;
+}
+
+#admin-report-simpletest-index .unittestsummary {
+	padding: 8px;
+	margin-top: 1em;
+}
+
+#admin-roles-manage .singlebutton,
+#admin-roles-allowoverride .singlebutton,
+#admin-roles-allowassign .singlebutton {
+	padding: 10px;
+	text-align:center;
+}
+
+.rolecap .inherit,
+.rolecap .allow,
+.rolecap .prevent,
+.rolecap .prohibit {
+	text-align:center;
+}
+
+#admin-roles-manage .rolecap .cap-desc .cap-name,
+#admin-roles-override .rolecap .cap-desc .cap-name {
+	display: block;
+	font-size: 0.75em;
+}
+
+#admin-roles-override .cell.c1,
+#admin-roles-assign .cell.c1 {
+	padding-top: 0.75em;
+	font-size: 0.7em;
+}
+
+#adminsettings fieldset {
+	margin-top: 1em;
+	padding: 1em 0.5em;
+}
+
+#adminsettings legend {
+	display: none;
+}
+
+#adminsettings .form-group {
+	float: left;
+}
+
+#adminsettings .form-item {
+	margin: 0;
+}
+
+#adminsettings label {
+	display: block;
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+
+#adminsettings .form-shortname {
+	display: block;
+	font-size: 0.75em;
+}
+
+#adminsettings select,
+#adminsettings input {
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+#adminsettings textarea {
+	float: left;
+	margin: 0 0 0 10px;
+	width: 65%;
+}
+
+#adminsettings .form-group select,
+#adminsettings .form-group input {
+	display: inline;
+	float: none;
+}
+
+/* #adminsettings .admin-configtime .form-select {
+	display: inline;
+	float: none;
+}
+
+#adminsettings div.admin-frontpage div.form-group select.form-select {
+	display: inline;
+	float: none;
+} */
+
+#adminsettings .description {
+	clear: both;
+	margin: 0 1em 0 160px;
+	padding: 0.3em 0 1.5em 0;
+}
+
+#admin-report-simpletest-index span.notice {
+	color: map-get($color, text--warning);
+}
+
+#admin-report-simpletest-index b.pass {
+	color: map-get($color, text--success);
+}
+
+#admin-report-simpletest-index b.fail, b.exception {
+	color: map-get($color, text--error);
+}
+
+#admin-report-simpletest-index .exception, .exception pre {
+	background-color: map-get($color, background--alt);
+}
+
+#admin-report-simpletest-index .unittestsummary {
+	color: map-get($color, text);
+}
+
+#admin-report-simpletest-index .unittestsummary.fail {
+	background-color: map-get($color, background--error);
+}
+
+#admin-report-simpletest-index .unittestsummary.pass {
+	background-color: map-get($color, background--success);
+}
+
+#adminsettings fieldset {
+   background-color: map-get($color, background--alt);
+   border-color: map-get($color, border);
+   color: map-get($color, text);
+}
+
+#adminsettings .form-shortname {
+   color: map-get($color, text);
+}
+
+.block_admin_tree.sideblock .link.current {
+	background-color: map-get($color, background--alt);
+}
+
+.environmenttable {
+	font-size: 0.8em;
+}
+
+.form-buttons {
+	margin: 10px 0 0 160px;
+}
+
+.form-text {
+	width: 20em;
+}
+.form-textarea {  }
+.form-select {  }
+.form-checkbox {  }
+.form-radio {  }
+.form-submit {  }
+.form-reset {  }
+
+.admin-frontpagedesc .htmlarea {
+	margin: 0 auto 10px auto;
+	width : 600px;
+}
+
+.adminsearchform {
+	padding-top:10px;
+}
+
+table.formtable tbody th {
+	font-weight: normal;
+	text-align: right;
+}
+
+.admin .generalboxcontent {
+	background-color: map-get($color, background--alt);
+}
+
+.admin .generalbox {
+	border-color: map-get($color, border); 
+}
+
+.admin .informationbox {
+	border-color: map-get($color, border);
+	background-color: map-get($color, background); 
+}
+
+table.flexible  .r0 {
+	background-color: map-get($color, table__row);
+}
+
+table.flexible .r1 {
+	background-color: map-get($color, table__row--alt);
+}

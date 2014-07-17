@@ -1,0 +1,389 @@
+/*
+*	CALENDAR STYLES
+*/
+
+#calendar {
+	width: 100%;
+	border-spacing: 5px;
+	border-collapse: separate;
+}
+
+#calendar h2,
+#calendar h3 {
+	text-align: center;
+}
+
+#calendar .maincalendar,
+#calendar .sidecalendar {
+	vertical-align: top;
+	border: 1px solid;
+	padding: 0px;
+	border-color: map-get($color, border);
+}
+
+#calendar .sidecalendar {
+	width: 25%;
+}
+
+#calendar .maincalendar table.calendarmonth {
+	border-collapse: separate;
+	margin: 0px auto;
+	width: 98%;
+}
+
+#calendar .maincalendar table.calendarmonth th {
+	padding:10px;
+	border-bottom:2px solid;
+	border-color: map-get($color, border--alt);
+}
+
+#calendar .maincalendar table.calendarmonth td {
+	height: 5em;
+	padding-left: 4px;
+	padding-top: 4px;
+	line-height:1.2em;
+}
+
+table.minicalendar {
+	border-color: map-get($color, border);
+}
+
+#calendar .maincalendar table.calendarmonth td,
+table.minicalendar td,
+table.minicalendar th {
+	width:14%;
+	vertical-align:top;
+}
+
+table.minicalendar td {
+	text-align: center;
+}
+
+#calendar .maincalendar table.calendarmonth td table td {
+	height: auto;
+}
+
+#calendar div.header {
+	padding: 5px;
+}
+
+#calendar .maincalendar .buttons {
+	float: right;
+}
+
+#calendar .maincalendar .filters table,
+#calendar .sidecalendar .filters table,
+.sideblock.block_calendar_month .filters table {
+	border-collapse:separate;
+	border-spacing: 2px;
+	padding: 2px;
+	width: 100%;
+}
+
+#calendar .maincalendar .filters {
+	padding: 0px 10px;
+}
+
+#calendar .sidecalendar .filters {
+	padding: 5px;
+}
+
+#calendar .maincalendar .controls {
+	clear:both;
+	padding:10px;
+}
+
+#calendar .maincalendar table.calendarmonth ul.events-new,
+#calendar .maincalendar table.calendarmonth ul.events-underway {
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+	background-color: map-get($color, background--alt);
+}
+
+#calendar .maincalendar table.calendarmonth ul li {
+	margin-top: 4px;
+}
+
+.minicalendarblock {
+	padding: 0px 4px;
+}
+
+table.minicalendar {
+	width: 100%;
+	margin: 10px auto;
+	padding:2px;
+	border-width:1px;
+	border-style:solid;
+	border-collapse:separate;
+	border-spacing:1px !important;
+}
+
+table.minicalendar th {
+	padding: 0px 2px;
+}
+
+#calendar .maincalendar .eventlist {
+	padding: 10px;
+}
+
+#calendar .maincalendar .eventlist .topic {
+	padding: 5px;
+	border-style:solid; 
+	border-width: 0px;
+	border-bottom-color: #EEEEEE;
+	border-bottom-width: 1px;
+}
+
+#calendar .maincalendar .eventlist .event {
+	width:100%;
+	margin-bottom:10px;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-width:1px;
+	border-style:solid;
+	border-color: map-get($color, border);
+}
+
+#calendar .maincalendar .eventlist .event .name {
+	float:left;
+}
+
+#calendar .maincalendar .eventlist .event .course {
+	float:left;
+	clear:left;
+	font-size:0.8em;
+}
+
+#calendar .maincalendar .eventlist .event .date {
+	float:right;
+}
+
+#calendar .maincalendar .eventlist .event .description .commands {
+	width:100%;
+	text-align: right;
+}
+
+#calendar .maincalendar .eventlist .event .description {
+	padding:5px;
+}
+
+#calendar .maincalendar .eventlist .event .picture {
+	padding:8px;
+}
+
+#calendar .maincalendar .eventlist .event .side {
+	width:32px;
+}
+
+#calendar #selecteventtype table {
+	margin:auto;
+}
+
+#calendar .event_global,
+#calendar .event_course,
+#calendar .event_group,
+#calendar .event_user,
+.minicalendar .event_global,
+.minicalendar .event_course,
+.minicalendar .event_group,
+.minicalendar .event_user {
+	border:2px solid !important;
+}
+
+.minicalendar .event_global,
+.block_calendar_month .event_global {
+	border-color: map-get($color, calendar__event--global) !important;
+	background-color: map-get($color, calendar__event--global);
+}
+
+#calendar .event_course,
+.minicalendar .event_course,
+.block_calendar_month .event_course {
+	border-color: map-get($color, calendar__event--course) !important; 
+	background-color: map-get($color, calendar__event--course);
+}
+
+#calendar .event_group,
+.minicalendar .event_group,
+.block_calendar_month .event_group {
+	border-color: map-get($color, calendar__event--group) !important; 
+	background-color: map-get($color, calendar__event--group);
+}
+
+#calendar .event_user,
+.minicalendar .event_user,
+.block_calendar_month .event_user {
+	border-color: map-get($color, calendar__event--user) !important; 
+	background-color: map-get($color, calendar__event--user);
+}
+
+#calendar .duration_global,
+#calendar .duration_course,
+#calendar .duration_group,
+#calendar .duration_user,
+.minicalendar .duration_global,
+.minicalendar .duration_course,
+.minicalendar .duration_group,
+.minicalendar .duration_user {
+	border-top:2px solid !important;
+	border-bottom:2px solid !important;
+}
+
+#calendar .duration_global,
+.minicalendar .duration_global {
+	border-top-color: map-get($color, calendar__duration--global) !important;
+	border-bottom-color: map-get($color, calendar__duration--global) !important;
+}
+
+#calendar .duration_course,
+.minicalendar .duration_course {
+	border-top-color: map-get($color, calendar__duration--course) !important;
+	border-bottom-color: map-get($color, calendar__duration--course) !important;
+}
+
+#calendar .duration_group,
+.minicalendar .duration_group {
+	border-top-color: map-get($color, calendar__duration--group) !important;
+	border-bottom-color: map-get($color, calendar__duration--group) !important;
+}
+
+#calendar .duration_user,
+.minicalendar .duration_user {
+	border-top-color: map-get($color, calendar__duration--user) !important;
+	border-bottom-color: map-get($color, calendar__duration--user) !important;
+}
+
+#calendar .today,
+.minicalendar .today {
+	border:2px solid;
+	border-color: map-get($color, calendar__today);
+}
+
+#calendar .weekend,
+.minicalendar .weekend {
+	color: map-get($color, text--calendar__weekend);
+}
+ 
+.cal_popup_bg {
+	padding:0px;
+	margin:0px;
+	border:1px solid;
+	border-color: map-get($color, border);
+	background-color: map-get($color, background);
+}
+
+.cal_popup_fg {
+	background-color: map-get($color, background);
+}
+
+.cal_popup_close {
+	margin-right:5px;
+	font-family:sans-serif;
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+.cal_popup_caption {
+	border-width:0px 0px 1px 0px;
+	border-style:solid;
+	padding-bottom:2px;
+	font-family:sans-serif;
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+.calendar-controls .previous,
+.calendar-controls .next {
+	width: 12%;
+}
+
+.calendar-controls .previous {
+	text-align: left;
+}
+.calendar-controls .current {
+	text-align: center;
+}
+.calendar-controls .next {
+	text-align: right;
+}
+span.previous, span.current, span.next {
+	display: block;
+	float: left;
+}
+span.current {
+	width: 76%;
+}
+
+#calendar .maincalendar .calendar-controls .previous,
+#calendar .maincalendar .calendar-controls .next {
+	width: 30%;
+}
+#calendar .maincalendar .calendar-controls .current {
+	width: 40%;
+	font-weight: bold;
+}
+
+#calendar .indent {
+	padding-left: 20px;
+}
+
+#calendar .sidecalendar abbr,
+.block_calendar_month abbr {
+	border: none;
+}
+#calendar .eventnone a,
+.block_calendar_month .eventnone a {
+	text-decoration:none;
+	color:black;
+	cursor:text;
+}
+
+#calendar .maincalendar .eventlist .event .referer {
+	font-weight:bold;
+}
+
+#calendar .maincalendar table.calendarmonth td {
+	font-size:0.8em;
+}
+
+#calendar div.header {
+	font-weight:bold;
+}
+
+#calendar .sidecalendar .filters {
+	font-size:0.8em;
+}
+
+.sideblock .filters td {
+	font-size:1.1em;
+}
+
+#calendar .maincalendar .controls {
+	font-size:1.2em;
+}
+
+#calendar .maincalendar .day {
+	font-weight: bold;
+}
+
+table.minicalendar {
+	font-size:0.85em;
+}
+
+#calendar .maincalendar .eventlist .event .topic,
+#calendar .maincalendar .eventlist .event .picture,
+#calendar .maincalendar .eventlist .event .side {
+	background-color: map-get($color, background--alt);
+}
+
+.minicalendar a,
+.calendarmonth a {
+	color: map-get($color, anchor);
+}
+
+#calendar .maincalendar .filters table,
+#calendar .sidecalendar .filters table,
+.block_calendar_month .filters table {
+	background-color: map-get($color, background--alt);
+}

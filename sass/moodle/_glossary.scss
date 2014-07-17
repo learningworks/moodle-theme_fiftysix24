@@ -1,0 +1,207 @@
+/*
+*	GLOSSARY STYLES
+*/
+
+.glossarypost .commands {
+	width: 200px;
+	white-space: nowrap;
+}
+
+#mod-glossary-comments .glossarypost,
+#mod-glossary-comment .glossarypost {
+	margin-top: 15px;
+}
+
+ .entryboxheader {
+	border-width: 1px 1px 0px 1px;
+	border-style: solid;
+}
+
+.entrybox {
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+}
+
+.glossarypost {
+	width: 95%;
+	border-width:1px;
+	border-style:solid;
+	border-collapse:separate;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.entrylist {
+	border-width:0px;
+}
+
+.entrylowersection {
+	padding-top: 10px;
+}
+
+.entrylowersection table{
+	width: 100%;
+}
+
+.entrylowersection .aliases {
+	text-align:center;
+}
+
+.entrylowersection .icons,
+.entrylowersection .ratings {
+	text-align:right;
+	padding-right: 5px;
+}
+
+.entrylowersection .ratings {
+	padding-bottom: 2px;
+}
+
+.categoryheader {
+	width: 95%;
+}
+
+.glossaryformatheader {
+	width: 90%;
+}
+
+.glossarypost .entry {
+	padding: 3px;
+}
+
+.glossarypost .picture {
+	width: 35px;
+}
+
+.glossarycomment {
+	border-width:1px;
+	border-style:solid;
+	border-collapse:separate;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.glossarycomment .entry {
+	padding: 3px;
+}
+
+.glossarycomment .picture {
+	width: 35px;
+}
+
+.glossarycomment .icons {
+	text-align: right;
+}
+
+.glossarydisplay {
+	width: 70%;
+}
+
+.glossarydisplay .tabs {
+	width: 100%;
+}
+
+.glossarydisplay .separator {
+	width: 4px;
+}
+
+.glossarydisplay .tabs .selected,
+.glossarydisplay .tabs .inactive,
+.glossarydisplay .tabs .general {
+}
+
+.glossarypopup {
+	width: 95%;
+}
+
+.glossaryapproval {
+	width: 100%;
+}
+
+.mod-glossary .glossarydisplay .tabs {
+	margin-bottom: 0px;
+}
+
+.mod-glossary .glossarydisplay .tabs .side {
+	border-style: none;
+	border-width: 0px;
+	width: auto;
+}
+
+.glossarypost .commands {
+	font-size: 0.8em;
+}
+
+.glossarypost .author {
+	font-size: 0.8em;
+}
+
+.glossarypost .time {
+	font-size: 0.8em;
+}
+
+.concept {
+	font-weight: bold;
+}
+
+.glossarycomment .author {
+	font-size: 0.8em;
+}
+
+.entrylowersection .aliases {
+	font-size: 0.8em;
+}
+
+.entrylowersection .icons,
+.entrylowersection .ratings {
+	font-size: 0.8em;
+}
+
+#mod-glossary-index .cell {
+	font-size:0.8em;
+}
+
+.entryboxheader {
+	border-color: #BBBBBB;
+}
+
+.entrybox {
+	border-color: #BBBBBB;
+}
+
+.entry {
+}
+
+.glossarypost {
+	border-color: #DDDDDD;
+}
+
+.glossarypost .entryheader,
+.glossarypost .entryapproval,
+.glossarypost .picture,
+.glossarypost .entryattachment,
+.glossarypost .left {
+	background-color: #F0F0F0;
+}
+
+.glossarycomment {
+	border-color: #DDDDDD;
+}
+
+.glossarycomment .entryheader,
+.glossarycomment .picture,
+.glossarycomment .left {
+	background-color: #F0F0F0;
+}
+
+#mod-glossary-report .generalbox .teacher {
+	background: #F0F0F0;
+}
+
+.categoryheader {
+	background-color: #dddddd;
+}
+
+.glossaryformatheader {
+	background-color: #dddddd;
+}

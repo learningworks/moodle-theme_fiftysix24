@@ -1,0 +1,344 @@
+/*
+*	COURSE STYLES
+*/
+
+.activitydate, .activityhead {
+	text-align:center;
+}
+
+#course-view .section td {
+	vertical-align:top;
+}
+
+#course-view .section td.content {
+	padding:5px;
+	border-style:solid;
+	border-width:1px;
+	border-left:0px;
+	border-right:0px;
+}
+
+#course-view .section td.side {
+	padding:5px;
+	border-style:solid;
+	border-width:1px;
+}
+
+#course-view .section td.left {
+	border-right:0px;
+	text-align:center;
+	width: 1.5em;
+}
+
+#course-view .section td.right {
+	border-left:0px;
+	text-align:center;
+	width: 1.5em;
+}
+
+#course-view .current .side {
+}
+
+#course-view .section .spacer {
+	height:0.5em;
+}
+
+#course-view .section .weekdates {
+}
+
+#course-view ul.section, 
+#site-index ul.section, 
+#course-view ul.section li, 
+#site-index ul.section li { 
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
+}
+
+#course-view ul.section li.activity ul li, 
+#site-index ul.section li.activity ul li { 
+ list-style: disc; 
+}
+
+/*Accessibility: No-tables course format. */
+
+#course-view ul.weekscss, .weekscss li { 
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
+}
+
+/* Window-width: 800 pixels.
+
+  IE doesn't support, see inline IE conditional comment. */
+.weekscss-format {
+	min-width: 763px;
+}
+
+.weekscss-format .block_adminblock select,
+.weekscss-format .block_calendar_month .minicalendar {
+	width: 100%;
+	padding: 0;
+}
+
+.weekscss-format .block_calendar_month .minicalendar th,
+.weekscss-format .block_calendar_month .minicalendar td {
+	padding: 0.1em 0 0.1em 1px;
+}
+
+.weekscss-format #middle-column {
+	margin: 0 12.5em 0 12.5em;
+}
+
+.weekscss-format #left-column,
+.weekscss-format #right-column {
+	width: 11.5em;
+}
+
+.weekscss-format #left-column {
+	float: left;
+}
+
+.weekscss-format #right-column {
+	float: right;
+}
+
+.weekscss li.section {
+	margin-bottom: 0.5em;
+	border-style:solid;
+	border-width:1px;
+}
+
+.weekscss .content, 
+.weekscss .side {
+	padding: 5px;
+}
+
+.weekscss .content {
+	margin: 0 1.7em 0 1.7em;
+}
+
+.weekscss .right {
+	width: 1.6em;
+	float: right;
+	text-align:center;
+}
+
+.section .activity img.activityicon {
+	vertical-align:middle;
+	height:16px;
+	width:16px;
+}
+
+.section img.movetarget {
+	height:16px;
+	width:80px;
+}
+
+body#course-view .unread {
+	margin-left: 3em;
+} 
+ body#course-view .sideblock.drag .header {
+	cursor: move;
+}
+
+body#course-enrol .generalbox {
+	margin-top: 20px;
+}
+
+body#course-enrol .coursebox {
+	margin-top: 20px;
+}
+
+body#course-user .graph {
+	text-align: center;
+}
+
+body#course-user .section,
+body#course-user .content {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+body#course-user .section {
+	border-width:1px;
+	border-style:solid;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+body#course-user .section h2 {
+	margin-top: 0px;
+}
+
+.headingblock, h2.headingblock {
+	border-width:1px;
+	border-style:solid;
+	padding:5px; 
+	margin:0%;
+}
+
+.headingblock .link {
+	text-align:right;
+}
+
+body#site-index .headingblock,
+body#course-view .headingblock {
+	margin-bottom: 9px;
+}
+
+.coursebox {
+	margin-bottom: 8px;
+}
+
+.categoryboxcontent,
+.courseboxcontent {
+	border-width:1px;
+	border-style:solid;
+}
+
+.courseboxcontent .cost {
+	padding-top: 20px;
+}
+
+.courseboxcontent ul.teachers li {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	text-indent:0;
+}
+
+#course-view .section {
+	font-size:0.95em;
+	line-height:1.2em;
+}
+
+#course-view .section .activity {
+	padding:0.2em 0;
+}
+
+#course-view .section .activity a {
+	line-height:1em;
+}
+
+#course-view .section .left {
+	font-weight:bold;
+}
+
+.activitydate, .activityhead {
+	font-size:0.9em;
+}
+
+.weeklydatetext {
+	font-size:0.9em;
+	font-weight:bold;
+}
+
+.coursebox .info {
+	font-size:1em;
+}
+
+.coursebox .teachers,
+.coursebox .cost {
+	font-size:0.9em;
+}
+
+.coursebox .summary {
+	font-size:0.9em;
+}
+
+#course-recent h2.main {
+	font-size:1.1em;
+}
+
+h2.headingblock {
+	font-size:1.1em;
+}
+
+
+
+
+/* course, entry-page, login */
+
+.headingblock {
+	border-color:#DDDDDD;
+}
+/* course */
+
+.headingblock .outline {
+	border-color:#DDDDDD;
+}
+
+#course-view .weekscss .section,
+#course-view .section td {
+	border-color:#DDDDDD;
+}
+/* .content should match the body background, sides are white. */
+
+#course-view .weekscss .content {
+	background: #FAFAFA;
+}
+
+#course-view .weekscss .section,
+#course-view .section td.side {
+	background: #FFFFFF;
+}
+
+#course-view .section .side {
+}
+
+#course-view .section .left {
+}
+
+#course-view .section .right {
+}
+
+#course-view .weekscss .current,
+#course-view .current td.side {
+	background: #FFD991;
+}
+
+#course-view .weekscss .hidden,
+#course-view .hidden td.side {
+	background: #DDDDDD;
+}
+
+#course-view .topics {
+}
+
+#course-view .weeks {
+}
+
+#course-view .section .spacer {
+}
+
+#course-view .section .weekdates {
+	color: #777777;
+}
+
+#course-view .weekscss .weekdates {
+	color: #333333;
+}
+
+.categoryboxcontent,
+.courseboxcontent {
+	border-color:#DDDDDD;
+}
+body#course-user .section {
+	border-color:#AAAAAA;
+}
+
+#admin-report .plugin,
+#course-report .plugin,
+#course-import .plugin {
+	margin-bottom: 20px;
+	margin-left:10%;
+	margin-right:10%;
+	border-bottom: 1px solid #cecece;
+	border-top: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	border-left: 1px solid #cecece;
+	background-color: #fdfdfd;
+}

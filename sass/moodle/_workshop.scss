@@ -1,0 +1,36 @@
+/*
+*	WORKSHOP STYLES
+*/
+
+#mod-workshop-index .cell {
+	font-size:0.8em;
+}
+
+.workshoppostpicture {
+	background-color:#FEE6B9;
+}
+
+.workshopassessmentheading {
+	background-color:#DDDDDD;
+}
+
+.error {
+	color:#ff0000;
+}
+
+#admin-roles-override .capcurrent {
+	background-color:#FFFFFF;
+	border: 1px solid #cecece;
+}
+
+#admin-roles-manage .rolecap,
+#admin-roles-override .rolecap {
+	border:none;
+	border-bottom:1px solid;
+	border-bottom-color: #cecece;
+}
+
+#admin-roles-manage .rolecap .cap-desc .cap-name,
+#admin-roles-override .rolecap .cap-desc .cap-name {
+	color: #888;
+}

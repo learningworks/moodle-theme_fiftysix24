@@ -1,0 +1,225 @@
+/*
+*	FORUM STYLES
+*/
+
+.forumheaderlist,
+.forumpost {
+	border-width:1px;
+ 	border-style:solid;
+ 	border-collapse:separate;
+}
+
+.forumpost {
+	margin-top: 15px;
+}
+
+.forumpost .topic {
+	padding: 4px;
+ 	border-style:solid;
+ 	border-width: 0px;
+ 	border-bottom-width: 1px;
+}
+
+.forumpost .commands {
+	padding-top: 0.5em;
+ 	text-align:right;
+ 	clear: both;
+}
+
+.forumpost .ratings {
+	padding-top: 1em;
+ 	text-align:right;
+}
+
+.forumpost .attachments {
+	padding: 7px;
+ 	text-align:right;
+}
+
+.forumpost .content {
+	padding: 4px;
+}
+
+.forumpost .footer {
+	padding-top: 0.5em;
+ 	text-align:right;
+}
+
+.forumpost .link {
+	padding-top: 0.5em;
+ 	text-align:right;
+}
+
+.forumpost .left {
+	width: 35px;
+ 	padding: 4px;
+ 	text-align: center;
+ 	vertical-align: top;
+}
+
+.mod-forum .indent {
+	margin-left: 30px;
+}
+
+body#user-view .forumpost,
+.course .forumpost {
+	width: 100%;
+}
+
+body#mod-forum-search .c0 {
+	text-align: right;
+}
+
+body#mod-forum-search .introcontent {
+	padding: 15px;
+}
+
+.forumolddiscuss {
+	text-align: right;
+}
+
+.forumheaderlist {
+	width: 100%;
+}
+
+.forumheaderlist td {
+	border-width:1px 0px 0px 1px;
+ 	border-style:solid;
+}
+
+.forumheaderlist .replies {
+	text-align: center;
+ 	white-space: nowrap;
+}
+
+.forumheaderlist .picture {
+	width: 35px;
+}
+
+.forumheaderlist .discussion .starter {
+	vertical-align: middle;
+}
+
+.forumheaderlist .lastpost {
+	white-space: nowrap;
+ 	text-align: right;
+}
+
+.forumheaderlist .discussion .author {
+	white-space: nowrap;
+}
+
+.forumolddiscuss {
+	text-align:right;
+}
+
+.forumaddnew,
+.forumnodiscuss,
+.noticeboxcontent {
+	text-align:center;
+}
+
+#mod-forum-view .unread {
+	padding-left: 3px;
+ 	padding-right: 3px;
+}
+
+#mod-forum-discuss .forumpost.unread .content {
+	border-style: solid;
+ 	border-width: 2px;
+}
+
+#mod-forum-index .unread img,
+#mod-forum-view .unread img {
+ margin-left: 5px;
+}
+
+#email .unsubscribelink {
+	margin-top:20px;
+ 	border-width: 0px 1px 0px 0px;
+ 	border-style: solid;
+ 	text-align:center;
+}
+
+.forumnodiscuss{
+	font-weight:bold;
+}
+
+.forumpost .topic .subject {
+	font-weight: bold;
+}
+
+.forumpost .topic .author {
+	font-size: 0.8em;
+}
+
+.forumpost .commands,
+.forumpost .link,
+.forumpost .footer {
+	font-size: 0.9em;
+}
+
+.forumheaderlist .discussion .lastpost {
+	font-size: 0.7em;
+}
+body#mod-forum-search .introcontent {
+	font-weight:bold;
+}
+body#mod-forum-index .generalbox .cell {
+	font-size: 0.80em;
+}
+
+.forumpost .edited {
+	font-style: italic;
+}
+
+.forumheaderlist,
+.forumpost {
+	border-color:#DDDDDD;
+}
+
+.forumpost .content {
+	background: #FFFFFF;
+}
+
+.forumpost .left {
+	background:#EEEEEE; 
+}
+
+.forumpost .topic {
+	border-bottom-color: #EEEEEE;
+}
+
+.forumpost .starter {
+	background:#DDDDDD; 
+}
+
+.forumheaderlist .discussion .starter {
+	background:#DDDDDD; 
+}
+
+.forumheaderlist td {
+	border-color: #FFFFFF;
+}
+
+.sideblock .post .head {
+	color:#555555;
+}
+
+.forumthread .unread {
+	background: #FFD991;
+}
+
+#mod-forum-discuss .forumpost {
+	background: none;
+}
+
+#mod-forum-discuss .forumpost.unread .content {
+	border-color: #FFD991; 
+} 
+
+#mod-forum-discuss .forumthread .unread {
+} 
+
+#mod-forum-index .unread {
+}

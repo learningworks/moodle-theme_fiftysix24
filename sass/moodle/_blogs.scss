@@ -1,0 +1,25 @@
+/*
+*	BLOG STYLES
+*/
+
+.blogpost .audience {
+	text-align: right;
+	font-size: 0.85em;
+}
+
+.blogpost .tags {
+	margin-top: 15px;
+	font-size: 0.85em;
+}
+
+.blogpost.blogdraft .content {
+ background-color: map-get($color, background--alt);
+}
+
+.block_blog_tags .official {
+	color: map-get($color, text);
+}
+
+.block_blog_tags .personal {
+	color: map-get($color, text);
+}
